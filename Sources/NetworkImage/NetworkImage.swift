@@ -184,6 +184,7 @@ public struct NetworkImage<Content>: View where Content: View {
   }
 }
 
+@available(iOS 14.0, *)
 public struct _OptionalContent<Content>: View where Content: View {
   private let image: Image?
   private let content: (Image) -> Content
