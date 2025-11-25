@@ -205,6 +205,7 @@ public struct _OptionalContent<Content>: View where Content: View {
   }
 }
 
+@available(iOS 14.0, *)
 extension _OptionalContent where Content == Image {
   init(_ image: Image?) {
     self.init(image, content: { $0 })
